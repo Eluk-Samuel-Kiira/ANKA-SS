@@ -5,10 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Performance extends Model
+class Orders extends Model
 {
     use HasFactory;
     public $timestamps=false;
-
-    protected $fillable=['quantity_left'];
 }

@@ -39,6 +39,9 @@
       <li class="nav-item d-none d-sm-inline-block">
         <a href="{{ route('admin.dashboard') }}" class="nav-link">Home</a>
       </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Contact</a>
+      </li>
     </ul>
 
     <!-- Right navbar links -->
@@ -86,7 +89,7 @@
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
             <li class="nav-item">
-                <a href="{{ route('admin.dashboard') }}" class="nav-link {{ request()->is('admin/dashboard')?'active':'' }}">
+                <a href="#" class="nav-link {{ request()->is('admin/dashboard')?'active':'' }}">
                     <i class="nav-icon fas fa-home"></i>
                   <p>
                     Home
@@ -94,7 +97,7 @@
                 </a>
               </li>
             <li class="nav-item">
-            <a href="{{ route('admin.participants') }}" class="nav-link {{ request()->is('admin/dashboard/participants')?'active':'' }}">
+            <a href="#" class="nav-link">
                 <i class="nav-icon fas fa-users"></i>
               <p>
                 Participants
@@ -102,7 +105,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="{{ route('admin.products') }}" class="nav-link {{ request()->is('admin/dashboard/products')?'active':'' }}">
+            <a href="#" class="nav-link">
                 <i class="nav-icon fas fa-archive"></i>
               <p>
                 Products
@@ -110,7 +113,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="{{ route('admin.customers') }}" class="nav-link {{ request()->is('admin/dashboard/customers')?'active':'' }}">
+            <a href="#" class="nav-link">
                 <i class="nav-icon fas fa-users"></i>
               <p>
                 Customers
@@ -118,7 +121,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="{{ route('admin.sales') }}" class="nav-link {{ request()->is('admin/dashboard/sales')?'active':'' }}">
+            <a href="#" class="nav-link">
                 <i class="nav-icon fas fa-dollar-sign"></i>
               <p>
                 Sales
@@ -197,11 +200,9 @@
 <script src="dist/js/pages/dashboard.js"></script>
 <!-- OPTIONAL SCRIPTS -->
 <script src="plugins/chart.js/Chart.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="dist/js/pages/dashboard3.js"></script>
-<script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/modules/exporting.js"></script>
-    <script src="https://code.highcharts.com/modules/export-data.js"></script>
-    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
 </body>
 </html>
